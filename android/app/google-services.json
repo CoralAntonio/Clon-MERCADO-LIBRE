@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "502701913219",
+    "project_id": "mercadolibre-2a265",
+    "storage_bucket": "mercadolibre-2a265.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502701913219:android:81c1abcba9a518d6af17b6",
+        "android_client_info": {
+          "package_name": "com.example.mercado_libre"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2YXx34Hs-eGsSf_ZzaTSOIGpT3DRi0rQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
