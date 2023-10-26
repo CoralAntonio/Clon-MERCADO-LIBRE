@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
-
 class anunciosCard extends StatelessWidget {
   final String image;
 
-
   const anunciosCard({
     required this.image,
-
   });
 
   @override
@@ -17,19 +14,16 @@ class anunciosCard extends StatelessWidget {
         elevation: 0,
         color: Colors.white,
         margin: EdgeInsets.symmetric(vertical: 15, horizontal: 4),
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 185,
-              width: 350,
-              child: Image.network(
-                image,
-                fit: BoxFit.contain,
-              ),
+        child: ClipRRect( 
+          borderRadius: BorderRadius.circular(10.0), 
+          child: SizedBox(
+            height: 120,
+            width: 340,
+            child: Image.network(
+              image,
+              fit: BoxFit.fill, 
             ),
-          ],
+          ),
         ),
       ),
     );
