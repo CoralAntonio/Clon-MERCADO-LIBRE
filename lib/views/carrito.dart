@@ -128,9 +128,9 @@ class _CarritoViewState extends State<CarritoView> {
                                     'Productos (5)',
                                     style: TextStyle(fontSize: 15),
                                   ),
-                                  Text('\$12000',
+                                  Text('\$${controller.total}',
                                       textAlign: TextAlign.right,
-                                      style: TextStyle(fontSize: 12)),
+                                      style: TextStyle(fontSize: 17)),
                                 ],
                               ),
                               Row(

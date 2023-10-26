@@ -32,6 +32,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return AppBarExample(
+      
         scaffoldKey: _scaffoldKey, productsFromApi: productsFromApi);
   }
 }
@@ -45,7 +46,9 @@ class AppBarExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
+      
       key: scaffoldKey,
       appBar: AppBar(
         toolbarHeight: 50,
@@ -69,6 +72,7 @@ class AppBarExample extends StatelessWidget {
             ),
           ),
         ),
+        
         backgroundColor: Colors.yellowAccent,
         actions: <Widget>[
           IconButton(
@@ -108,6 +112,7 @@ class AppBarExample extends StatelessWidget {
           ),
         ),
       ),
+      
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,

@@ -20,57 +20,37 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           Column(
             children: [
-                        Padding(
-                          padding: const EdgeInsets.all(22.0),
-                          child: ButtonBar(
-                            alignment: MainAxisAlignment
-                                .center, // Alinear los botones al centro horizontalmente
-                            children: [
-                              SizedBox(
-                                width: 380,
-                                height: 56,
-                                child: ElevatedButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(builder: (context) => HomePage()),
-                                    );
-                                  },
-                                  style: ElevatedButton.styleFrom(
-                                    elevation: 0,
-                                    backgroundColor: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(5),
-                                    ),
-                                  ),
-                                  child: const Text(
-                                    'Continuar como visitante',
-                                    style: TextStyle(
-                                      color: Colors.blueAccent,
-                                      fontSize: 17,
-                                      fontFamily: 'Poppins',
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-          Container(
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 17, top: 30),
-                child: Image.asset(
-                  "assets/images/login.jpg",
-                  height: 350,
-                  width: 370,
+              Padding(
+                padding: const EdgeInsets.all(29.7),
+                child: SizedBox(
+                    width: 170,
+                    height: 66,
+                    child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (Context) => HomePage()));
+                        },
+                        child: Text(
+                          'Continuar como visitante',
+                          style: TextStyle(color: Colors.blueAccent),
+                        ))),
+              ),
+              Container(
+                child: Align(
                   alignment: Alignment.bottomCenter,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 17, top: 30),
+                    child: Image.asset(
+                      "assets/images/login.jpg",
+                      height: 350,
+                      width: 370,
+                      alignment: Alignment.bottomCenter,
+                    ),
+                  ),
                 ),
-                ),
-                ),
-          ),
+              ),
             ],
           ),
           SizedBox(height: 160),
