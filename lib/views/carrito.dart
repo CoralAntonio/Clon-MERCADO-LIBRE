@@ -16,7 +16,7 @@ class CarritoView extends StatefulWidget {
 class _CarritoViewState extends State<CarritoView> {
   late List<Product> productsFromApi = [];
   bool isLoading = true;
-  final CartController controller = Get.find();
+  final CartController controller = Get.put(CartController());
 
   @override
   void initState() {
